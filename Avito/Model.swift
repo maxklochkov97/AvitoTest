@@ -6,3 +6,25 @@
 //
 
 import Foundation
+
+struct Avito: Decodable {
+    let company: Company
+}
+
+struct Company: Decodable {
+    let name: String
+    let employees: [Employer]
+}
+
+struct Employer: Decodable {
+    var name: String
+    var phoneNumber: String
+    var skills: [String]
+
+    private enum CodingKeys: String, CodingKey {
+        case name
+        case phoneNumber = "phone_number"
+        case skills
+    }
+}
+

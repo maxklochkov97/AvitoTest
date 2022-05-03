@@ -13,6 +13,10 @@
 		5FD6794528211AF6007654B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD6794328211AF6007654B6 /* Main.storyboard */; };
 		5FD6794728211AF8007654B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FD6794628211AF8007654B6 /* Assets.xcassets */; };
 		5FD6794A28211AF8007654B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD6794828211AF8007654B6 /* LaunchScreen.storyboard */; };
+		5FD6795228211B0D007654B6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6795128211B0D007654B6 /* Model.swift */; };
+		5FD6795428213696007654B6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6795328213696007654B6 /* TableViewCell.swift */; };
+		5FD6795628214444007654B6 /* HeaderTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6795528214444007654B6 /* HeaderTableCell.swift */; };
+		5FD67958282145FF007654B6 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD67957282145FF007654B6 /* Extensions+UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		5FD6794628211AF8007654B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FD6794928211AF8007654B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FD6794B28211AF8007654B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FD6795128211B0D007654B6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		5FD6795328213696007654B6 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		5FD6795528214444007654B6 /* HeaderTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableCell.swift; sourceTree = "<group>"; };
+		5FD67957282145FF007654B6 /* Extensions+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +66,11 @@
 			children = (
 				5FD6793D28211AF6007654B6 /* AppDelegate.swift */,
 				5FD6793F28211AF6007654B6 /* SceneDelegate.swift */,
+				5FD67957282145FF007654B6 /* Extensions+UIView.swift */,
 				5FD6794128211AF6007654B6 /* ViewController.swift */,
+				5FD6795528214444007654B6 /* HeaderTableCell.swift */,
+				5FD6795328213696007654B6 /* TableViewCell.swift */,
+				5FD6795128211B0D007654B6 /* Model.swift */,
 				5FD6794328211AF6007654B6 /* Main.storyboard */,
 				5FD6794628211AF8007654B6 /* Assets.xcassets */,
 				5FD6794828211AF8007654B6 /* LaunchScreen.storyboard */,
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FD67958282145FF007654B6 /* Extensions+UIView.swift in Sources */,
+				5FD6795428213696007654B6 /* TableViewCell.swift in Sources */,
+				5FD6795628214444007654B6 /* HeaderTableCell.swift in Sources */,
 				5FD6794228211AF6007654B6 /* ViewController.swift in Sources */,
 				5FD6793E28211AF6007654B6 /* AppDelegate.swift in Sources */,
 				5FD6794028211AF6007654B6 /* SceneDelegate.swift in Sources */,
+				5FD6795228211B0D007654B6 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
