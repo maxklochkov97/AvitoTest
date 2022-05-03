@@ -24,8 +24,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         layout()
         json()
-        print(model as Any)
-
     }
 
     private func layout() {
@@ -54,11 +52,14 @@ class ViewController: UIViewController {
 
             do {
                 let companies = try JSONDecoder().decode(Avito.self, from: data)
-                print(companies)
+
                 self.model = companies
-                self.tableView.reloadData()
+                self.model?.company.employees = companies.company.employees.sorted(by: { $0.name < $1.name} )
+                
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
             } catch {
-                print(2)
                 print(error)
             }
         }.resume()
@@ -75,16 +76,6 @@ extension ViewController: UITableViewDataSource {
         guard let employeesCount = model?.company.employees.count else { return 0 }
         return employeesCount
     }
-
-
-//    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-//        return CGFloat.leastNormalMagnitude
-//    }
-//
-//    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-//        return UIView()
-//    }
-
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 

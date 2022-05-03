@@ -8,12 +8,12 @@
 import Foundation
 
 struct Avito: Decodable {
-    let company: Company
+    var company: Company
 }
 
 struct Company: Decodable {
     let name: String
-    let employees: [Employer]
+    var employees: [Employer]
 }
 
 struct Employer: Decodable {
