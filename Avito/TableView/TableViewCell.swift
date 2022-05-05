@@ -51,7 +51,7 @@ class TableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func configure(model: Employer) {
+    func configure(model: Employee) {
         self.employeeNameLabel.text = model.name
         self.employeePhoneLabel.text = model.phoneNumber
         self.employeeSkillsLabel.text = self.expandArrayToStringFrom(array: model.skills)
